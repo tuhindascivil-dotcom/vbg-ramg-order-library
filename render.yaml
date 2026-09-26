@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vbg-ramg-order-library
+    env: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: ADMIN_USER
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        sync: false

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VB-G RAM G Order Library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>VB-G RAM G</h1>
+    <p>Order &amp; Guideline Library</p>
+  </div>
+  <button id="adminBtn" class="outline">Admin Login</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <h2>Search Orders &amp; Notifications</h2>
+      <p>Category-wise official documents in one place.</p>
+    </div>
+    <div class="stats"><b id="total">0</b><span>Total Documents</span></div>
+  </section>
+
+  <section class="controls">
+    <input id="search" placeholder="Search Order No., title, subject or keyword...">
+    <select id="category"><option value="">All Categories</option></select>
+  </section>
+
+  <section id="cards" class="grid"></section>
+</main>
+
+<div id="modal" class="modal hidden">
+ <div class="modalbox">
+  <button class="close" onclick="closeModal()">×</button>
+  <div id="modalContent"></div>
+ </div>
+</div>
+
+<footer>VB-G RAM G Order Library • Viewer can view/download • Admin can manage documents</footer>
+<script src="app.js"></script>
+</body>
+</html>
